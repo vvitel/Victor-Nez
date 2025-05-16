@@ -73,6 +73,8 @@ def show_photo(nom_photo="zzz.jpg", x=0, y=0, show_square=False):
     fig.update_xaxes(visible=False, showticklabels=False, showgrid=False, showline=False)
     fig.update_yaxes(visible=False, showticklabels=False, showgrid=False, showline=False)
     fig.update_layout(plot_bgcolor="rgba(0, 0, 0, 0)", margin=dict(l=0, r=0, t=0, b=0), autosize=True)
+    fig.update_traces(hovertemplate="<extra></extra>")
+
 
     if nom_photo != "zzz.jpg":
         fig.add_trace(go.Scatter(x=[x], y=[y], mode="markers", marker=dict(size=15, color="red")))
