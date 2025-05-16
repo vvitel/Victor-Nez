@@ -1,0 +1,5 @@
+dash==3.0.4
+dash_mantine_components==1.2.0
+pip install opencv-python
+pip install plotly
+pip install plotly-express
